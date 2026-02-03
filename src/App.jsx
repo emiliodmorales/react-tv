@@ -6,6 +6,7 @@ import { tvShows } from "./shows/data";
  */
 export default function App() {
   const [shows] = useState(tvShows);
+  const [selectedShow, setSelectedShow] = useState();
   return (
     <>
       <header>
