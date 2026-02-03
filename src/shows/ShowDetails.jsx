@@ -1,6 +1,8 @@
+import { useState } from "react";
 import "./shows.css";
 
 /** Allows users to browse through the episodes of the given show */
 export default function ShowDetails(show) {
+  const [selectedEpisode] = useState();
   return <div className="show-details"></div>;
 }
