@@ -4,8 +4,8 @@ import EpisodeList from "../episodes/EpisodeList";
 import EpisodeDetails from "../episodes/EpisodeDetails";
 
 /** Allows users to browse through the episodes of the given show */
-export default function ShowDetails(show) {
-  if (!show?.episodes) {
+export default function ShowDetails({ show }) {
+  if (!show) {
     return <p>Select a show to see details</p>;
   }
 
