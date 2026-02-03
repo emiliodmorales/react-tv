@@ -4,11 +4,11 @@ import "./shows.css";
 export default function ShowSelection({ shows, setSelectedShow }) {
   return (
     <nav className="shows">
-      {shows.map((show) => {
+      {shows.map((show) => (
         <a class="show" key={show.name} onClick={() => setSelectedShow(show)}>
           {show.name}
-        </a>;
-      })}
+        </a>
+      ))}
     </nav>
   );
 }
